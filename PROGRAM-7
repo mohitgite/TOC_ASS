@@ -1,0 +1,7 @@
+s = list(map(int,input(“Enter the binary no: ”).split()))
+length = len(s)
+s = "".join(['1' if i == '0' else '0' for i in s])
+s = bin(int(s,2)+1).replace("0b","")
+if length != len(s):
+    s ="0"*(l-len(s)) + s
+print("Two's Complement = ",s)
